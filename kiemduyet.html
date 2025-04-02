@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm Duyệt - Cheemse Trọ</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: auto;
+    }
+
+    h1 {
+        color: #ff7e5f;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .agree {
+        background: #28a745;
+        color: white;
+    }
+
+    .disagree {
+        background: #dc3545;
+        color: white;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Kiểm Duyệt Dịch Vụ - Cheemse Trọ</h1>
+        <p>Trước khi sử dụng dịch vụ của chúng tôi, bạn cần được **admin phê duyệt**.</p>
+        <p>Vui lòng đọc và đồng ý với điều khoản sau:</p>
+        <p><strong>1.</strong> Không đăng tải thông tin sai lệch hoặc vi phạm pháp luật.</p>
+        <p><strong>2.</strong> Tôn trọng quyền riêng tư của các thành viên khác.</p>
+        <p><strong>3.</strong> Chỉ sử dụng dịch vụ cho mục đích hợp pháp.</p>
+        <p><strong>4.</strong> Quản trị viên có quyền từ chối dịch vụ nếu vi phạm điều khoản.</p>
+        <p><strong>5.</strong>Cảm ơn</p>
+
+        <div class="buttons">
+            <button class="agree" onclick="approve()">Đồng ý</button>
+            <button class="disagree" onclick="reject()">Không đồng ý</button>
+        </div>
+    </div>
+
+    <script>
+        function approve() {
+            alert("Yêu cầu của bạn sẽ được gửi đến Admin để kiểm duyệt!");
+            window.location.href = "index.html"; // Chuyển hướng về trang chủ
+        }
+
+        function reject() {
+            alert("Bạn không thể tiếp tục sử dụng dịch vụ nếu không đồng ý với điều khoản.");
+        }
+    </script>
+</body>
+</html>
